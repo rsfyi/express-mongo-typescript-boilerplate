@@ -1,0 +1,46 @@
+{
+	"name": "express-mongo-typescript-boilerplate",
+	"version": "1.0.0",
+	"description": "This repository is basic setup of expressjs, mongodb with typescript, feel free to fork and create pr",
+	"main": "index.js",
+	"scripts": {
+		"server-development": "./node_modules/.bin/ts-node ./server/server.ts",
+		"start": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon -w ./server --ext \".ts\" --exec \"npm run server-development\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rsdoc/express-mongo-typescript-boilerplate.git"
+	},
+	"keywords": [ "express", "mongodb", "mongoose", "typescript" ],
+	"author": "Rahul Singh",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rsdoc/express-mongo-typescript-boilerplate/issues"
+	},
+	"homepage": "https://github.com/rsdoc/express-mongo-typescript-boilerplate#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"cross-env": "^5.2.0",
+		"express": "^4.17.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongodb": "^3.2.5",
+		"mongoose": "^5.5.10",
+		"morgan": "^1.9.1",
+		"nodemon": "^1.19.0",
+		"ts-node": "^8.1.0",
+		"typescript": "^3.4.5"
+	},
+	"devDependencies": {
+		"@types/bcryptjs": "^2.4.2",
+		"@types/body-parser": "^1.17.0",
+		"@types/cors": "^2.8.5",
+		"@types/express": "^4.16.1",
+		"@types/jsonwebtoken": "^8.3.2",
+		"@types/mongodb": "^3.1.27",
+		"@types/mongoose": "^5.5.1",
+		"@types/morgan": "^1.7.35",
+		"@types/node": "^12.0.2"
+	}
+}
